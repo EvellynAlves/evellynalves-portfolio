@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Estudo de caso E-Procon sobre acessibilidade como estratégia para reduzir fricção, aumentar autonomia e melhorar a eficiência do atendimento público."
+    >
+    <title>E-Procon — Estudo de Caso · Evellyn Alves</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
+
+    <header class="site-header">
+      <nav class="nav case-nav" aria-label="Navegação do estudo de caso">
+        <a class="brand" href="../../">Evellyn Alves<span>.</span></a>
+        <a class="back-link" href="../../">← Voltar ao portfólio</a>
+      </nav>
+    </header>
+
+    <main id="main" class="case-page">
+      <section class="case-hero" aria-labelledby="case-title">
+        <p class="eyebrow">Produto governamental · Digix · 2025/2026</p>
+        <h1 id="case-title">E-Procon: acessibilidade como estratégia para reduzir <em>fricção</em>.</h1>
+        <p class="case-note">
+          Uma revisão estrutural da jornada do Portal de Serviços do Procon, conectando
+          usabilidade, linguagem simples, mobile first e acessibilidade digital.
+        </p>
+        <p class="case-intro">
+          O projeto buscou aumentar a autonomia dos usuários, reduzir dependência do
+          atendimento humano e melhorar a eficiência operacional em uma plataforma pública
+          usada para registrar reclamações, denúncias e acompanhar atendimentos.
+        </p>
+
+        <dl class="case-meta">
+          <div><dt>Papel</dt><dd>Senior Product Designer I</dd></div>
+          <div><dt>Contexto</dt><dd>Atendimento público digital</dd></div>
+          <div><dt>Período</dt><dd>2025/2026</dd></div>
+          <div><dt>Resultado</dt><dd>38% menos chamados nos primeiros 30 dias</dd></div>
+        </dl>
+
+        <ul class="tag-cloud" aria-label="Temas do projeto">
+          <li>Acessibilidade digital</li>
+          <li>WCAG AA</li>
+          <li>Mobile first</li>
+          <li>Plain Language</li>
+          <li>Arquitetura de informação</li>
+          <li>Fluxos críticos</li>
+          <li>Atendimento público</li>
+          <li>Eficiência operacional</li>
+        </ul>
+      </section>
+
+      <section class="case-strip" aria-label="Indicadores que orientaram o projeto">
+        <article>
+          <p class="eyebrow">Comportamento real</p>
+          <h2>40% dos acessos eram mobile</h2>
+          <p>O comportamento dos usuários já indicava que dispositivos móveis precisavam orientar as decisões centrais do produto.</p>
+        </article>
+        <article>
+          <p class="eyebrow">Telas pequenas</p>
+          <h2>62% em 390x844</h2>
+          <p>Mesmo com uso concentrado em telas pequenas, a experiência anterior não havia sido planejada para mobile.</p>
+        </article>
+      </section>
+
+      <section class="case-section" aria-labelledby="context-title">
+        <div>
+          <p class="eyebrow">Contexto</p>
+          <h2 id="context-title">Problemas de experiência viravam sobrecarga operacional.</h2>
+        </div>
+        <div class="case-copy">
+          <p>
+            O E-Procon é uma plataforma digital da DIGIX, uma das maiores empresas de
+            tecnologia para o setor público no Brasil, utilizada por consumidores para
+            registrar reclamações, denúncias e acompanhar atendimentos.
+          </p>
+          <p>
+            Quando entrei no projeto, o sistema apresentava problemas estruturais de
+            usabilidade e acessibilidade que impactavam diretamente a experiência dos
+            usuários e aumentavam a dependência do atendimento humano para tarefas básicas.
+          </p>
+          <ul>
+            <li>Usuários não conseguiam fazer login ou criar conta com clareza.</li>
+            <li>Havia dificuldade para entender próximos passos e acompanhar atendimentos.</li>
+            <li>Solicitações no mobile eram difíceis de concluir.</li>
+            <li>Critérios WCAG nível AA precisavam ser tratados como qualidade, não só obrigação legal.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="problem-title">
+        <div>
+          <p class="eyebrow">Problema real</p>
+          <h2 id="problem-title">O sistema não promovia autonomia. Criava dependência.</h2>
+        </div>
+        <div class="case-copy">
+          <p>
+            O principal problema não era apenas visual. A experiência exigia esforço excessivo
+            dos usuários em praticamente toda a jornada: fluxos confusos, linguagem complexa,
+            baixa previsibilidade, excesso de informação e navegação inconsistente.
+          </p>
+          <p>
+            O login era um dos maiores exemplos. Na versão anterior, o usuário só conseguia
+            acessar sua conta caso iniciasse previamente uma reclamação online. Não existia
+            uma entrada clara para autenticação.
+          </p>
+          <ol class="numbered-list">
+            <li><h3>Denúncias ficavam bloqueadas</h3><p>Usuários que queriam denunciar não conseguiam acessar o sistema de forma independente.</p></li>
+            <li><h3>Contas eram criadas manualmente</h3><p>Muitas contas precisavam ser abertas pelo próprio Procon, aumentando esforço operacional.</p></li>
+            <li><h3>Tarefas simples viravam suporte</h3><p>Problemas de experiência geravam chamados e abandono antes da conclusão.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="strategy-title">
+        <div>
+          <p class="eyebrow">Estratégia</p>
+          <h2 id="strategy-title">Acessibilidade como ferramenta para simplificar a experiência.</h2>
+        </div>
+        <div class="case-copy">
+          <p>
+            A principal decisão estratégica foi tratar acessibilidade como ferramenta para
+            simplificar a experiência e melhorar o funcionamento do serviço como um todo.
+            O objetivo era criar uma experiência mais clara, previsível, menos cansativa e
+            mais eficiente para o cidadão e para a operação.
+          </p>
+          <ul>
+            <li>Simplificação dos fluxos.</li>
+            <li>Reorganização da navegação.</li>
+            <li>Redução de carga cognitiva.</li>
+            <li>Aplicação de linguagem simples.</li>
+            <li>Priorização do mobile first.</li>
+            <li>Revisão da arquitetura de informação.</li>
+            <li>Melhoria da previsibilidade das ações.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="scope-title">
+        <div>
+          <p class="eyebrow">Escopo da revisão</p>
+          <h2 id="scope-title">Revisão estrutural dos principais fluxos da plataforma.</h2>
+        </div>
+        <div class="case-copy">
+          <p>
+            A revisão desses fluxos buscou reduzir fricção, eliminar ambiguidades e facilitar
+            a execução das tarefas principais do sistema.
+          </p>
+          <ul class="case-pill-list">
+            <li>Home</li>
+            <li>Login e criação de conta</li>
+            <li>Reclamação</li>
+            <li>Denúncia</li>
+            <li>Solicitações do consumidor</li>
+            <li>Dúvidas</li>
+            <li>Sugestões e elogios</li>
+            <li>Termo de uso</li>
+            <li>Cadastro de novos fornecedores</li>
+            <li>Central de notificações para fornecedores</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="auth-title">
+        <div>
+          <p class="eyebrow">Reestruturação da experiência</p>
+          <h2 id="auth-title">A jornada começou pelo fluxo de autenticação.</h2>
+        </div>
+        <div class="case-copy">
+          <div class="before-after">
+            <article>
+              <p class="eyebrow">Antes</p>
+              <h3>Login dependia da abertura de uma reclamação.</h3>
+              <p>Não existia uma entrada clara e independente para acessar a plataforma.</p>
+            </article>
+            <article>
+              <p class="eyebrow">Depois</p>
+              <h3>Autenticação como entrada independente.</h3>
+              <p>A mudança permitiu acesso mais claro, continuidade da experiência e redução de dependência do atendimento humano.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="mobile-title">
+        <div>
+          <p class="eyebrow">Mobile first</p>
+          <h2 id="mobile-title">Mobile deixou de ser adaptação e passou a orientar o produto.</h2>
+        </div>
+        <div class="case-copy">
+          <p>
+            Os dados mostravam que o comportamento real dos usuários já era mobile. Por isso,
+            a experiência foi desenhada considerando dispositivos móveis como cenário principal.
+          </p>
+          <ul>
+            <li>Leitura simplificada e hierarquia visual clara.</li>
+            <li>Redução de esforço cognitivo.</li>
+            <li>Componentes mais acessíveis e áreas de toque adequadas.</li>
+            <li>Melhor escaneabilidade e menos etapas desnecessárias.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="language-title">
+        <div>
+          <p class="eyebrow">Comunicação</p>
+          <h2 id="language-title">Linguagem simples como parte da acessibilidade.</h2>
+        </div>
+        <div class="case-copy">
+          <p>
+            Grande parte das dificuldades dos usuários não estava apenas na interface, mas na
+            compreensão das informações e instruções. Por isso, aplicamos princípios de Plain
+            Language para tornar os textos mais claros, reduzir ambiguidades e diminuir
+            insegurança durante a navegação.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="role-title">
+        <div>
+          <p class="eyebrow">Minha atuação</p>
+          <h2 id="role-title">Condução da experiência do produto do início ao fim.</h2>
+        </div>
+        <div class="case-copy">
+          <p>
+            Atuei como única designer do projeto e fui responsável pela condução da experiência
+            do produto do início ao fim da iniciativa. Também liderei integralmente a frente de
+            acessibilidade digital, do diagnóstico inicial ao acompanhamento da implementação
+            junto ao time técnico.
+          </p>
+          <ul class="case-pill-list">
+            <li>Diagnóstico de usabilidade e acessibilidade</li>
+            <li>Definição de fluxos prioritários</li>
+            <li>Estruturação mobile first</li>
+            <li>Simplificação da navegação</li>
+            <li>Revisão de comunicação e linguagem simples</li>
+            <li>Alinhamento entre design, desenvolvimento e QA</li>
+            <li>Acompanhamento da implementação</li>
+            <li>Apoio técnico em acessibilidade</li>
+            <li>Capacitação da equipe sobre acessibilidade digital</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="results-title">
+        <div>
+          <p class="eyebrow">Resultados</p>
+          <h2 id="results-title">Menos fricção, mais autonomia e eficiência operacional.</h2>
+        </div>
+        <dl class="result-grid">
+          <div><dt>Chamados digitais</dt><dd>-38%.</dd><p>redução nos primeiros 30 dias</p></div>
+          <div><dt>Operação</dt><dd>Menos demanda</dd><p>diminuição significativa no atendimento do Procon-MS</p></div>
+          <div><dt>Usuários</dt><dd>Mais autonomia</dd><p>fluxos críticos mais claros e previsíveis</p></div>
+          <div><dt>Equipe</dt><dd>Mais maturidade</dd><p>evolução técnica em acessibilidade digital</p></div>
+        </dl>
+      </section>
+
+      <section class="case-section" aria-labelledby="reflection-title">
+        <div>
+          <p class="eyebrow">Reflexão</p>
+          <h2 id="reflection-title">Acessibilidade melhora o produto como um todo.</h2>
+        </div>
+        <div class="case-copy">
+          <p>
+            Esse projeto reforçou minha visão de que acessibilidade não é apenas uma exigência
+            técnica ou legal. Quando utilizada estrategicamente, ela melhora a experiência, a
+            comunicação, a eficiência operacional, a autonomia dos usuários e a qualidade do
+            produto.
+          </p>
+          <p>
+            Mais do que adaptar um sistema existente, o desafio foi transformar uma experiência
+            pública complexa em uma jornada mais clara, acessível e humana.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-contact" aria-labelledby="case-contact-title">
+        <h2 id="case-contact-title">Quer conversar sobre acessibilidade em produtos públicos?</h2>
+        <a href="mailto:evellyn.mf.alves@gmail.com?subject=Projeto%20com%20foco%20em%20acessibilidade">Falar com a Evellyn →</a>
+        <a href="../../">Ver outros projetos</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Evellyn Alves. Designed with intention & accessibility in mind.</p>
+      <p>WCAG-aware · Reduced motion friendly</p>
+    </footer>
+  </body>
+</html>
