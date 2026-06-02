@@ -15,6 +15,80 @@
       rel="stylesheet"
     >
     <link rel="stylesheet" href="../../styles.css">
+    <style>
+      .before-after-images {
+        grid-template-columns: minmax(0, 0.62fr) minmax(0, 1fr);
+      }
+
+      .before-after-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .image-card {
+        margin: 0;
+        border: 1px solid var(--faint);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.36);
+        overflow: hidden;
+      }
+
+      .image-card-header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid var(--faint);
+      }
+
+      .image-card-badge {
+        display: inline-block;
+        border-radius: 4px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        padding: 0.3rem 0.6rem;
+      }
+
+      .image-card-badge--before {
+        background: var(--soft);
+        color: var(--muted);
+      }
+
+      .image-card-badge--after {
+        background: var(--accent);
+        color: #fff;
+      }
+
+      .image-card-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 420px;
+      }
+
+      .image-card-body img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 8px;
+        box-sizing: border-box;
+        transform: scale(1.0);
+        transform-origin: center center;
+      }
+
+      @media (max-width: 900px) {
+        .before-after-images {
+          grid-template-columns: 1fr;
+        }
+        .before-after-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
     <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
@@ -134,7 +208,7 @@
             mais eficiente para o cidadão e para a operação.
           </p>
     
-        <ul> class="tag-cloud" aria-label="Estrategias utilizadas no projeto">
+        <ul class="tag-cloud" aria-label="Estrategias utilizadas no projeto">
             <li>Simplificação dos fluxos.</li>
             <li>Reorganização da navegação.</li>
             <li>Redução de carga cognitiva.</li>
@@ -142,6 +216,7 @@
             <li>Priorização do mobile first.</li>
             <li>Revisão da arquitetura de informação.</li>
             <li>Melhoria da previsibilidade das ações.</li>
+            <li>Implementação de Design System</li>
           </ul>
         </div>
       </section>
@@ -168,6 +243,39 @@
             <li>Cadastro de novos fornecedores</li>
             <li>Central de notificações para fornecedores</li>
           </ul>
+        </div>
+      </section>
+
+      <section class="case-section before-after-images" aria-labelledby="before-after-title">
+        <div>
+          <p class="eyebrow">Interface · Antes &amp; Depois</p>
+          <h2 id="before-after-title">Evolução visual da plataforma.</h2>
+        </div>
+        <div class="before-after-grid">
+          <figure class="image-card">
+            <div class="image-card-header">
+              <span class="image-card-badge image-card-badge--before">Antes</span>
+            </div>
+            <div class="image-card-body">
+              <img
+                src="Antes.png"
+                alt="Interface anterior do E-Procon"
+                loading="lazy"
+              >
+            </div>
+          </figure>
+          <figure class="image-card">
+            <div class="image-card-header">
+              <span class="image-card-badge image-card-badge--before">Depois</span>
+            </div>
+            <div class="image-card-body">
+              <img
+                src="Depois.png"
+                alt="Interface redesenhada do E-Procon"
+                loading="lazy"
+              >
+            </div>
+          </figure>
         </div>
       </section>
 
@@ -202,7 +310,7 @@
             Os dados mostravam que o comportamento real dos usuários já era mobile. Por isso,
             a experiência foi desenhada considerando dispositivos móveis como cenário principal.
           </p>
-          <ul> class="case-section" aria-label="Benefícios da abordagem mobile first">
+          <ul class="tag-cloud" aria-label="Benefícios da abordagem mobile first">
             <li>Leitura simplificada e hierarquia visual clara.</li>
             <li>Redução de esforço cognitivo.</li>
             <li>Componentes mais acessíveis e áreas de toque adequadas.</li>
